@@ -90,7 +90,22 @@ footer a{
 }
 
 footer a:hover{
-    color: red;
+    color: chartreuse;
 }
+
+
+
+
+/*TEXTO ANIMADO TITULO*/
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+    color: goldenrod;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 
 
