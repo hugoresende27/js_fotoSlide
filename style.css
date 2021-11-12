@@ -43,12 +43,15 @@ body::before{
     background-color: rgba(0,0,0,0.7);
     z-index: -1;
 }
-.slider-main{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0, 3px 6px rgba(0,0,0,0.23);
+
+ .slider-main{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5), 0 3px 6px rgba(0,0,0,0.8);
     height: 70vh;
     width: 70vw;
-    position: relative;
-}
+    position: relative; 
+    overflow: hidden;
+} 
+
 
 
 
@@ -73,8 +76,8 @@ footer{
     color: chartreuse;
     font-family:'Inconsolata',sans-serif ;
     text-align: center;
-    border-top: 1px dashed;
-     position: absolute;
+    /* border-top: 1px dashed; */
+    position: absolute;
     bottom: .5rem;
     
     
