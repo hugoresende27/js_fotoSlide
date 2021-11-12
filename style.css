@@ -16,7 +16,7 @@
 body
 {
     /* background-image: linear-gradient(90deg, #6273c0, #2b88f0); */
-    background-image: url('/img/a.jpg');
+    /* background-image: url('/img/a.jpg'); */
     font-family: 'MuseoModerno',sans-serif;
     font-weight: 600;
     display: flex;          /*coloca tudo em linha*/
@@ -27,7 +27,7 @@ body
     overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
     margin: 0;
     overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
-    padding: 20px;
+    padding: 10px;
     background-position: center;
     background-size: cover;
     transition: 0.4s ease;
@@ -52,19 +52,53 @@ body::before{
     overflow: hidden;
 } 
 
+.slide{
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: -15px;
+    left: -15vw;
+    transition:  0.4s ease;
+    z-index: 1;
+}
+.slide.ativo{
+    opacity: 1;
+}
+
+.arrow {
+    position: fixed;
+    color: #fff;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 30px;
+    border: 2px solid orange;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow:focus{
+    outline: 0;
+}
+
+.left-arrow{
+    left: calc(15vw - 65px);
+}
+.right-arrow{
+    right: calc(15vw - 65px);
+}
 
 
 
 @media(max-width: 480px)        /*para ecras mais pequenos*/
 {
-    .main
-    {
-        width: 100vw;
-        
-    }
+   
     footer 
     {
-        display: none;
+        /* display: none; */
     };
 }
 
@@ -99,7 +133,7 @@ footer a:hover{
 /*TEXTO ANIMADO TITULO*/
 .ml2 {
     font-weight: 900;
-    font-size: 3.5em;
+    font-size: 1.8em;
     color: goldenrod;
   }
   
@@ -107,5 +141,10 @@ footer a:hover{
     display: inline-block;
     line-height: 1em;
   }
+
+#titulo{
+    position: absolute;
+    top: 0;
+}
 
 
